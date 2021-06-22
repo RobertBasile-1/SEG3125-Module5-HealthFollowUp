@@ -1,0 +1,266 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    background-color: rgb(253, 253, 253) !important;
+    overflow-x: hidden;
+}
+
+#aboutUs.container-fluid {
+    /* height: 100vh;
+    max-width: 100%;
+    min-height: 1200px;
+    margin: 0; */
+}
+
+#warning {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #ffffff;
+    size: 20px;
+    display: none;
+}
+
+#home {
+    /*Ensures every section is the height of the window*/
+    height: 100vh;
+    max-width: 100%;
+    min-height: 900px;
+    margin: 0;
+}
+
+#getStarted-btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    width: 15%;
+    height: 5%;
+}
+
+#homePanel.panel {
+    margin-top: 91px;
+}
+
+#about.panel {
+    margin-top: 137px;
+}
+
+#about.panel img {
+    width: 30%;
+    max-width: 30%;
+}
+
+#title {
+    font-size: 32px;
+    font-family: Helvetica, sans-serif;
+}
+
+.panel {
+    display: flex;
+}
+
+.panel img {
+    width: 50%;
+    max-width: 50%;
+}
+
+#intromsg.content {
+    padding: 200px 90px;
+    width: 50%;
+    max-width: 50%;
+    text-align: center;
+    font-size: 22px;
+    align-items: center;
+    background-color: rgb(253, 253, 253);
+}
+
+.col-sm.p {
+    padding: 100px 100px;
+    width: 65%;
+    max-width: 65%;
+    text-align: center;
+    font-size: 22px;
+    align-items: center;
+    background-color: rgb(253, 253, 253);
+}
+
+#learn-MoreBtn {
+    padding: 17px 40px;
+    border: 1px solid;
+    font-display: Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    width: 50%;
+    max-width: 50%;
+    align-items: center;
+    margin-left: 25%;
+    display: block;
+    background-color: #ffff;
+    transition: 0.3s;
+}
+
+#learn-MoreBtn:hover {
+    background-color: rgb(46, 189, 236);
+}
+
+.col-sm.g {
+    text-align: center;
+    display: block;
+    margin-right: 1%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    width: 150%;
+}
+
+.col-sm img {
+    margin-bottom: 10%;
+    margin-top: 3%;
+    background-color: rgb(253, 253, 253);
+}
+
+.col-md {
+    margin-left: 5%;
+    display: flex;
+}
+
+.row.F {
+    padding: 14px 16px;
+    width: 200%;
+    max-width: 100%;
+    text-align: left;
+    font-size: 22px;
+    align-items: left;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin-left: 1%;
+    margin-bottom: 10%;
+    display: flex;
+}
+
+#contactForm {
+    width: 100%;
+}
+
+#book-btn {
+    background: #0ab04e;
+    border-color: #0ab04e;
+    width: 100%;
+    font-size: 16px;
+    height: 100%;
+}
+
+#book-now {
+    background: #2ebdff;
+    border-color: #2ebdff;
+    width: 50%;
+    font-size: 16px;
+    height: 100%;
+    margin-top: 15%;
+    margin-bottom: 3%;
+    float: right;
+}
+
+#exampleFormControlSelect1.form-group {
+    width: 55%;
+}
+
+#companyInfo {
+    background-color: #212529;
+}
+
+.col-sm.F {
+    height: 50%;
+}
+
+.row.first {
+    display: flex;
+}
+
+.form-control.name {
+    width: 100%;
+}
+
+.last {
+    width: 50%;
+}
+
+.cardNumber {
+    width: 100%;
+}
+
+.scroll {
+    padding: 1rem;
+    background: white;
+    height: 250px;
+    overflow: auto;
+}
+
+.p {
+    font-family: Helvetica, sans-serif;
+}
+
+#navbar-option:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#navbar-option {
+    font-size: 1.5em;
+}
+
+.navbar.navbar-expand-md.bg-dark {
+    transition: top 0.3s;
+    top: 0;
+}
+
+#navbar-options-div {
+    margin-right: 5%;
+}
+
+.textPar.form-control:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.card.mb-3 {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: #333;
+    /* border: 1px solid white; */
+    /* color: #EEE; */
+}
+
+a.ui-state-default {
+    color: #2ebdec;
+}
+
+a.ui-state-default.ui-state-active {
+    color: #0ab04e;
+}
+
+.col.app {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.col.app img {
+    margin-left: 40%;
+}
+
+.col.app a {
+    position: relative;
+    float: right;
+    margin-top: -4%;
+    margin-right: 3%;
+}

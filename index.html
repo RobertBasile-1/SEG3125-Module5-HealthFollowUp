@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- CSS only -->
+    <link rel="icon" type="image/png" href="assets/logo.PNG" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+
+
+    <script src="scripts.js"></script>
+    <!-- CSS only -->
+
+    <title>Robman's Physiotherapy</title>
+</head>
+
+<body style="overflow-x: hidden;  background-color: rgb(253, 253, 253);">
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md bg-dark" style="opacity: 1;">
+
+        <a class="navbar-left" href="#" id="navbar-logo-div">
+            <!-- <span class="iconify" data-icon="medical-icon:i-health-services" data-inline="false" style="color: rgb(46, 189, 236); " data-width="200" data-height="100"></span> -->
+            <img src="assets/logo.PNG">
+        </a>
+        <a style="font-size:48px;font-family: Helvetica, sans-serif; color: white;" class="navbar-brand" href="#" id="navbar-title">Robman's Physiotherapy</a>
+
+        <ul class="navbar-nav ms-auto" id="navbar-options-div">
+            <li class="nav-item">
+                <a style="background-color: #212529;  color: rgb(46, 189, 236);" id="navbar-option" class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a style="background-color: #212529; color: rgb(46, 189, 236);" id="navbar-option" class="nav-link" href="#aboutUs">About</a>
+            </li>
+            <li class="nav-item">
+                <a style="background-color: #212529;  color: rgb(46, 189, 236); " id="navbar-option" class="nav-link" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+                <a style="background-color: #212529;  color: rgb(46, 189, 236); " id="navbar-option" class="nav-link" href="#booking">Booking</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Home page-->
+    <div class="container-fluid" style="padding:0;">
+
+        <div class="row" style="margin-bottom: 15%;">
+
+            <div class="col-md">
+                <img src="assets/helper.jpg" />
+            </div>
+
+            <div class="col-sm p">
+                <h3 style="font-size: 32px; text-align: center;"><u>PHYSIOTHERAPY</u></h3>
+                <p style="font-size: 38px;">Have you recently been involved in a traumatic experience? Do you always feel like your in pain? - we're ready to ease your pain.</p>
+                <a href="#aboutUs" style="text-decoration: none;"><button id="learn-MoreBtn">Learn More</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--About us page-->
+    <div id="aboutUs">
+        <div class="container-fluid">
+
+            <h1 style="margin-top:5%;margin-bottom:5%;font-family: Helvetica, sans-serif; text-align: center; font-size: 55px; font-weight: 700;">About</h1>
+
+
+
+            <!--Our mission-->
+            <div class="row">
+                <div class="col-sm p">
+                    <h3 style="font-size: 32px; text-align: center;"><u>OUR MISSION</u></h3>
+                    <p style="font-size: 38px;">We are the best clinic located on <b>1125 Colonel By Dr, Ottawa.</b> We are dedicated to provide the best possible physio treatment</p>
+                </div>
+                <div class="col-md" style="margin-right: 2%;">
+                    <img src="assets/rehab.jpg" />
+                </div>
+            </div>
+
+            <h1 style=" font-size: 55px; font-family: Helvetica, sans-serif; text-align: center; margin-top:5%;margin-bottom: 5%; font-weight: 700;">Meet our Staff <img src="https://img.icons8.com/windows/48/000000/group-background-selected.png" style="margin: 0;" /></h2>
+
+                <!--Doctor information-->
+                <div class="row" style="margin-top:5%;margin-bottom:5%; background-color: rgb(253, 253, 253);">
+
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4" style="border-right: 1px solid;">
+                                    <img src="assets/doctor1.PNG" width="100%" height="350">
+                                </div>
+                                <div class="col-md-8" style="background-color: rgb(253, 253, 253);">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-size: 32px;font-family: Helvetica, sans-serif;"><b>Doctor Sammy Birdadi</b></h5>
+                                        <p class="card-text" style="font-size: 22px; font-family: Helvetica, sans-serif;">Registered Physiotherapist who graduated from the University Of Ottawa and specializes in shockwave therapy</p>
+
+                                        <button id="book-now" class="btn btn-primary" href="#booking">Book Now!</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4" style="border-right: 1px solid;">
+                                    <img src="assets/doctor2.PNG" width="100%" height="350">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-size: 32px; font-family: Helvetica, sans-serif;"><b>Doctor Ilnius Kalfoni</b></h5>
+                                        <p class="card-text" style="font-size: 22px; font-family: Helvetica, sans-serif;">Registered Physiotherapist who graduated from the University Of McGill and specializes in concussion therapy</p>
+                                        <button id="book-now" class="btn btn-primary" href="#booking">Book Now!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4" style="border-right: 1px solid;">
+                                    <img src="assets/doctor3.PNG" width="100%" height="350">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-size: 32px; font-family: Helvetica, sans-serif;"><b>Doctor Patrick Barki</b></h5>
+                                        <p class="card-text" style="font-size: 22px; font-family: Helvetica, sans-serif;">Registered Physiotherapist who graduated from the University Of Toronto and specializes in massages and custom insoles creation</p>
+                                        <a href="#booking"> <button id="book-now" class="btn btn-primary">Book Now!</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+        </div>
+
+
+
+        <!--Services page-->
+        <div id="service" style="margin-bottom:5%;">
+            <div class="container-fluid">
+
+                <!--https://www.care2curephysiotherapy.com/?gclid=Cj0KCQjwweyFBhDvARIsAA67M73d3nfQ_ahuL20cWXA8Ytl5SDraPow3rfikddBeBPfhTGoxNi0RacIaAgN9EALw_wcB-->
+                <div style=" background-color: rgb(253, 253, 253);">
+                    <h2 style=" font-size: 55px;  font-weight: 700; font-family: Helvetica, sans-serif; text-align: center;margin-top:5%;margin-bottom: 5%;">Services <img src="https://img.icons8.com/fluent-systems-filled/48/000000/service.png" style="margin: 0;" /></h2>
+                    <div class="row" style="padding:14px 16px;">
+                        <div class="col-sm g">
+                            <!--https://www.care2curephysiotherapy.com/-->
+                            <img src="assets/concussion.png">
+                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e;">Concussion (125$/hour)</p>
+                            <p style="text-align: left; font-size: 20px;">Therapy involving the vestibular system the inner ear and its connection with the brain. Our proffessionals will do a precise assesment on full rehabilitation</p>
+                        </div>
+
+                        <div class="col-sm g">
+                            <img src="assets/tapin.png">
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">Massage (55$/hour)</p>
+                            <p style="text-align: left; font-size: 20px;">Hands-on manipulation of the soft tissues to pin point specfically the muscles,joints and ligaments for quick relief</p>
+                        </div>
+
+                        <div class="col-sm g">
+                            <img src="assets/tmj.png">
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">TMJ (65$/hour)</p>
+                            <p style="text-align: left; font-size: 20px;">Ensuring that anatomic anomolies in the jaw can be corrected so that you can enjoy a healthier jaw</p>
+                        </div>
+
+                        <div class="col-sm g">
+                            <img src="assets/schockwave.png">
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">Schockwave (150$/hour)</p>
+
+                            <p style="text-align: left; font-size: 20px;">Top of the line equipment used for fast pain relief</p>
+                        </div>
+
+                        <div class="col-sm g" style="margin-right:0;">
+                            <img src="assets/foot.png">
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">Custom Insoles (35$/each)</p>
+                            <p style="text-align: left; font-size: 20px;">Our top of the line proffessionals will be able to make precise assesments on your posture and various factors, to create a best suited custom insole</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!--Booking page-->
+
+        <div id="booking">
+            <div class="container-lg">
+                <h2 style=" font-size: 55px; font-family: Helvetica, sans-serif; font-weight: 700; text-align: center;margin-top:5%;margin-bottom: 5%;">Book an Appointment <img src="https://img.icons8.com/material-sharp/48/000000/appointment-scheduling.png" style="margin: 0;" /></h2>
+                <div class="row F">
+                    <div class="col-sm F" style="height:600px;overflow-y: scroll;">
+                        <form class="needs-validation" novalidate>
+                            <h1 style="font-family: Helvetica, sans-serif;font-size:32px;">Personal Information</h1>
+
+
+                            <div class="row first">
+                                <div class="last">
+                                    <label for="First_Name" class="textParTopic grey_text  mt-3" style="margin-bottom: 1%;">First Name</label>
+                                    <input type="text" class=" textPar form-control" id="first_name" aria-describedby="firstName" placeholder="Enter First Name" required>
+                                </div>
+
+                                <div class="last">
+                                    <label for="last_Name " class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Last Name</label>
+                                    <input type="text" class=" textPar form-control" id="last_Name" placeholder="Enter Last Name" required>
+                                </div>
+
+                            </div>
+
+                            <div class="row first">
+                                <div class="last">
+                                    <div class="form-group" id="phoneNumber">
+                                        <label for="email " class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Phone Number</label>
+                                        <input type="phone" class=" textPar form-control" id="phone_number" placeholder="(xxx)-xxx-xxxx" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="last">
+                                    <div class="form-group" id="emailAddress">
+                                        <label for="exampleFormControlInput1" class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <label for="exampleFormControlSelect1" class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Select one of the following services <img src="https://img.icons8.com/android/18/000000/info.png" title=" The following services can be further described in the Services section"
+                            style="margin: 0;" /></label>
+                            <select class="form-control" id="exampleFormControlSelect1" required>
+                                <option></option>
+                                <option>Concussion Therapy (125$/hour)</option>
+                                <option>Massage Therapy (55$/hour)</option>
+                                <option>TMJ Therapy (65$/hour)</option>
+                                <option>Shockwave Therapy (150$/hour)</option>
+                                <option>Custom Insoles (35$/each)</option>
+                            </select>
+
+
+                            <label for="exampleFormControlSelect1" class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Select one of the following Doctor</label>
+                            <select class="form-control " id="doctors" required>
+                                <option></option>
+                                <option value="1">Doctor Sammy Birdadi</option>
+                                <option value="2">Doctor Ilnius Kalfoni</option>
+                                <option value="3">Doctor Patrick Barki</option>
+                            </select>
+
+                            <div class="form-group">
+                                <label for="dateAndTime " class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Appointment Date and Time <img src="https://img.icons8.com/material/24/000000/date-to.png" style="margin: 0;"/></label>
+                                <input type="text" class="form-control" id="dateApp" style="margin-bottom: 5%;" placeholder="mm/dd/yyyy">
+                            </div>
+
+                            <div class="row">
+                                <h1 style="font-family: Helvetica, sans-serif;font-size:32px;">Payment Information <img src="https://img.icons8.com/android/24/000000/info.png" title="We are only taking this information in case of a last miniute canellation, you can cancel anytime before 24 hours of your appointment time with no charges to your account."
+                                        style="margin: 0;" /> <img src="https://img.icons8.com/color/48/000000/mastercard.png" style="margin: 0;" /> <img src="https://img.icons8.com/color/48/000000/visa.png" style="margin: 0;" /> <img src="https://img.icons8.com/color/48/000000/amex.png"
+                                        style="margin: 0;" /></h1>
+                            </div>
+                            <div class="row first">
+                                <div class="cardNumber">
+                                    <label for="Card_Number" class="textParTopic grey_text  mt-3" style="margin-bottom: 1%;">Card Number</label>
+                                    <input type="text" class=" textPar form-control" id="Card_Number" placeholder="xxxx xxxx xxxx xxxx" required>
+
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <a href="appointment.html"><button id="book-btn" class="btn btn-primary">Book Appointment</button></a>
+                        </form>
+                    </div>
+                    <div class="col-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9934156840995!2d-75.77081188444646!3d45.34894517909969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0725cabc2f75%3A0xe426f156dba85857!2s1125%20Baseline%20Rd%2C%20Nepean%2C%20ON%20K2G%206E2!5e0!3m2!1sen!2sca!4v1623000029668!5m2!1sen!2sca"
+                            width="632" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+        <div id="companyInfo" style="min-height:300px;height:60vh">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <nav class="navbar bg-dark text-white" style="margin-top: 20%;">
+                            <h1 style="font-size:38px;font-family: Helvetica, sans-serif;"><span class="iconify" data-icon="medical-icon:i-health-services" data-inline="false" style="color: rgb(46, 189, 236); padding-right: 10px;" data-width="70" data-height="70"></span>Robman's Physiotherapy</h1>
+                        </nav>
+                    </div>
+
+                    <div class="col-md" style="color:white;">
+
+                        <div style="margin-top: 20%;">
+                            <h1 style="font-family: Helvetica, sans-serif;">Address</h3>
+                                <p style="font-size:32px;font-family: Helvetica, sans-serif;">1125 Colonel By Dr, K4G 5T6 Ottawa.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md" style="color:white;">
+                        <div style="margin-top: 20%;">
+                            <h1 style="font-family: Helvetica, sans-serif;">Our store</h3>
+                                <p style="font-size:32px;font-family: Helvetica, sans-serif;">Mon - Fri, 9 AM - 6 PM<br>Saturday, 10 AM - 4 PM<br>Sunday, 12 AM - 3 PM</p>
+                                <p style="font-size:32px;font-family: Helvetica, sans-serif;">Phone: 613-123-4568</p>
+                                <p style="font-size:32px;font-family: Helvetica, sans-serif;">FAX: 613-123-4567</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button type="button" id="warning" class="btn btn-warning">Back to Top</button>
+
+</body>
+
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+</html>
