@@ -14,7 +14,6 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
 
-
     <script src="scripts.js"></script>
     <!-- CSS only -->
 
@@ -161,32 +160,38 @@
                         <div class="col-sm g">
                             <!--https://www.care2curephysiotherapy.com/-->
                             <img src="assets/concussion.png">
-                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e;">Concussion (125$/hour)</p>
+
+                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e; border-radius: 5px;border: 2px solid;">Concussion</p>
+                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e;">Price: 125$/hour</p>
                             <p style="text-align: left; font-size: 20px;">Therapy involving the vestibular system the inner ear and its connection with the brain. Our proffessionals will do a precise assesment on full rehabilitation</p>
                         </div>
 
                         <div class="col-sm g">
                             <img src="assets/tapin.png">
-                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">Massage (55$/hour)</p>
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;  border-radius: 5px;border: 2px solid;">Massage</p>
+                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e;">Price: 55$/hour</p>
                             <p style="text-align: left; font-size: 20px;">Hands-on manipulation of the soft tissues to pin point specfically the muscles,joints and ligaments for quick relief</p>
                         </div>
 
                         <div class="col-sm g">
                             <img src="assets/tmj.png">
-                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">TMJ (65$/hour)</p>
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;  border-radius: 5px;border: 2px solid;">TMJ</p>
+                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e;">Price: 65$/hour</p>
                             <p style="text-align: left; font-size: 20px;">Ensuring that anatomic anomolies in the jaw can be corrected so that you can enjoy a healthier jaw</p>
                         </div>
 
                         <div class="col-sm g">
                             <img src="assets/schockwave.png">
-                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">Schockwave (150$/hour)</p>
-
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;  border-radius: 5px;border: 2px solid;">Schockwave</p>
+                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e;">Price: 150$/hour</p>
                             <p style="text-align: left; font-size: 20px;">Top of the line equipment used for fast pain relief</p>
                         </div>
 
                         <div class="col-sm g" style="margin-right:0;">
                             <img src="assets/foot.png">
-                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;">Custom Insoles (35$/each)</p>
+                            <p style="font-weight: 900; font-size: 28px;color: #0ab04e;  border-radius: 5px;border: 2px solid;">Custom Insoles</p>
+                            <p style="font-weight: 900; font-size: 28px; color: #0ab04e;">Price: 35$/hour</p>
+
                             <p style="text-align: left; font-size: 20px;">Our top of the line proffessionals will be able to make precise assesments on your posture and various factors, to create a best suited custom insole</p>
                         </div>
 
@@ -205,19 +210,21 @@
                 <h2 style=" font-size: 55px; font-family: Helvetica, sans-serif; font-weight: 700; text-align: center;margin-top:5%;margin-bottom: 5%;">Book an Appointment <img src="https://img.icons8.com/material-sharp/48/000000/appointment-scheduling.png" style="margin: 0;" /></h2>
                 <div class="row F">
                     <div class="col-sm F" style="height:600px;overflow-y: scroll;">
-                        <form class="needs-validation" action="appointment.html" novalidate>
+                        <form class="needs-validation" action="appointment.html" method="post" novalidate>
                             <h1 style="font-family: Helvetica, sans-serif;font-size:32px;">Personal Information</h1>
 
 
                             <div class="row first">
                                 <div class="last">
                                     <label for="First_Name" class="textParTopic grey_text  mt-3" style="margin-bottom: 1%;">First Name</label>
-                                    <input type="text" class=" textPar form-control" id="first_name" aria-describedby="firstName" placeholder="Enter First Name" required>
+                                    <input type="text" class="form-control" id="first_name" aria-describedby="firstName" placeholder="Enter First Name" required>
+                                    <div class="invalid-feedback">Field is required</div>
                                 </div>
 
                                 <div class="last">
                                     <label for="last_Name " class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Last Name</label>
-                                    <input type="text" class=" textPar form-control" id="last_Name" placeholder="Enter Last Name" required>
+                                    <input type="text" class="form-control" id="last_Name" placeholder="Enter Last Name" required>
+                                    <div class="invalid-feedback">Field is required</div>
                                 </div>
 
                             </div>
@@ -226,7 +233,8 @@
                                 <div class="last">
                                     <div class="form-group" id="phoneNumber">
                                         <label for="email " class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Phone Number</label>
-                                        <input type="phone" class=" textPar form-control" id="phone_number" placeholder="(xxx)-xxx-xxxx" required>
+                                        <input type="tel" class="form-control" id="phone_number" placeholder="(xxx)-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                        <div class="invalid-feedback">The number you entered is invalid please enter this format (XXX)-XXX-XXXX ex: (647)-949-0837</div>
                                     </div>
                                 </div>
 
@@ -235,6 +243,7 @@
                                     <div class="form-group" id="emailAddress">
                                         <label for="exampleFormControlInput1" class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Email address</label>
                                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                        <div class="invalid-feedback">Please follow the required format name@example.com</div>
                                     </div>
                                 </div>
 
@@ -250,6 +259,7 @@
                                 <option>Shockwave Therapy (150$/hour)</option>
                                 <option>Custom Insoles (35$/each)</option>
                             </select>
+                            <div class="invalid-feedback">Field is required</div>
 
 
                             <label for="exampleFormControlSelect1" class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Select one of the following Doctor</label>
@@ -260,12 +270,16 @@
                                 <option value="3">Doctor Patrick Barki</option>
                             </select>
 
+                            <div class="invalid-feedback">Field is required</div>
+
+
                             <div class="form-group">
                                 <label for="dateAndTime " class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Appointment Date and Time <img src="https://img.icons8.com/material/24/000000/date-to.png" style="margin: 0;"/></label>
-                                <input type="text" class="form-control" id="dateApp" style="margin-bottom: 5%;" placeholder="mm/dd/yyyy">
+                                <input type="text" class="form-control" id="dateApp" style="margin-bottom: 1%;" placeholder="mm/dd/yyyy" required>
+                                <div class="invalid-feedback">Field is required</div>
                             </div>
 
-                            <div class="row">
+                            <div class="row" style="margin-top: 5%;">
                                 <h1 style="font-family: Helvetica, sans-serif;font-size:32px;">Payment Information <img src="https://img.icons8.com/android/24/000000/info.png" title="We are only taking this information in case of a last miniute canellation, you can cancel anytime before 24 hours of your appointment time with no charges to your account."
                                         style="margin: 0;" /> <img src="https://img.icons8.com/color/48/000000/mastercard.png" style="margin: 0;" /> <img src="https://img.icons8.com/color/48/000000/visa.png" style="margin: 0;" /> <img src="https://img.icons8.com/color/48/000000/amex.png"
                                         style="margin: 0;" /></h1>
@@ -273,14 +287,14 @@
                             <div class="row first">
                                 <div class="cardNumber">
                                     <label for="Card_Number" class="textParTopic grey_text  mt-3" style="margin-bottom: 1%;">Card Number</label>
-                                    <input type="text" class=" textPar form-control" id="Card_Number" placeholder="xxxx xxxx xxxx xxxx" required>
-
+                                    <input type="text" class="form-control" id="Card_Number" placeholder="xxxx xxxx xxxx xxxx" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+                                    <div class="invalid-feedback">Please follow the required format xxxx xxxx xxxx xxxx</div>
                                 </div>
                             </div>
 
                             <br>
 
-                            <a href="appointment.html"> <button id="book-btn" class="btn btn-primary">Book Appointment</button> </a>
+                            <a href="appointment.html"> <button type="submit" id="book-btn" class="btn btn-primary" style="margin-bottom: 2%;">Book Appointment</button> </a>
                         </form>
                     </div>
                     <div class="col-lg">
@@ -338,6 +352,7 @@
 <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 

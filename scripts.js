@@ -1,21 +1,6 @@
 const setDateFormat = "mm/dd/yy";
 var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
 
-// var Sammy = {
-//     name: "Sammy",
-//     value: 1,
-//     dayOff: [2, 4],
-// };
-// var Ilnius = {
-//     name: "Ilnius",
-//     value: 2,
-//     dayOff: [1, 3, 5],
-// };
-// var Patrick = {
-//     name: "Patrick",
-//     value: 3,
-//     dayOff: [3, 4],
-// };
 
 function disableDates(date) {
     let val = document.getElementById("doctors").value;
@@ -37,30 +22,13 @@ function disableDates(date) {
     }
 }
 
-// var therapist = document.getElementById("doctors").value;
 
-// var dayOFF;
-// if (therapist == Sammy.value) {
-//     dayOFF = Sammy.dayOff;
-// } else if (therapist == Ilnius.value) {
-//     dayOFF = Ilnius.dayOff;
-// } else if (therapist == Patrick.value) {
-//     dayOFF = Patrick.dayOff;
-// }
-
-// if (date.getDay() == 0 || dayOFF.includes(date.getDay()))
-//     return [false];
-
-// var string = jQuery.datepicker.formatDate(setDateFormat, date);
-// return [unavailableDates.indexOf(string) == -1]
-// }
 
 $(document).ready(function() {
+
     /* Credit for the if statement logic and animation to this website */
     /*https://deepmikoto.com/coding/3--how-to-create-back-to-top-button-using-jquery-and-some-css*/
-    $("#book-btn").on("click", function() {
-        something();
-    });
+
 
     $(function() {
         $(window).scroll(function() {
@@ -72,6 +40,8 @@ $(document).ready(function() {
         });
     });
 
+
+    //back to the top
     $(function() {
         // previous detection logic
 
@@ -85,24 +55,51 @@ $(document).ready(function() {
     });
 
 
-    /*Boostrap*/
-    function something() {
-        var forms = $(".needs-validation");
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms).forEach(function(form) {
-            form.addEventListener(
-                "submit",
-                function(event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    form.classList.add("was-validated");
-                },
-                false
-            );
-        });
+    function validatePhone(phone) {
+
+        var filter = new RegExp("^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$");
+        if (!filter.test(phone)) {
+
+            return false;
+
+        } else {
+            return true;
+
+        }
+
     }
+
+
+
+
+
+    $(function() {
+        $("#book-btn").on("click", function() {
+            var forms = $(".needs-validation");
+
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                form.addEventListener(
+                    "submit",
+                    function(event) {
+
+                        var smt = validatePhone($("#" + forms[0][2].id).val());
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        localStorage.setItem("doctors", $("#doctors option").filter(':selected').text());
+                        localStorage.setItem("date", $("#dateApp").val());
+
+                        form.classList.add("was-validated");
+
+                    },
+                    false
+                );
+            });
+        });
+    });
+    /*Boostrap*/
+
 
     $(function() {
         $("#dateApp").datepicker({

@@ -114,8 +114,13 @@
     text-align: center;
     display: block;
     margin-right: 1%;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     width: 150%;
+    transition: 0.3s;
+    border: 0.5px solid lightgrey;
+}
+
+.col-sm.g:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .col-sm img {
