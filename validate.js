@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    $("#information").html("Thank you for booking your appointment with " + localStorage.getItem("doctors") + " on " + localStorage.getItem("date") + " at ");
+    $("#information").html("Thank you for booking your appointment with " + localStorage.getItem("doctors") + " on " + localStorage.getItem("date"));
     // localStorage.removeItem("doctors");
     // localStorage.removeItem("date");
 });
