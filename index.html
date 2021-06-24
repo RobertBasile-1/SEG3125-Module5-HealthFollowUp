@@ -99,14 +99,18 @@
                                     <div class="card-body">
                                         <h5 class="card-title" style="font-size: 32px;font-family: Helvetica, sans-serif;"><b>Doctor Sammy Birdadi</b></h5>
                                         <p class="card-text" style="font-size: 22px; font-family: Helvetica, sans-serif;">Registered Physiotherapist who graduated from the University Of Ottawa and specializes in shockwave therapy</p>
-
-                                        <button id="book-now" class="btn btn-primary" href="#booking">Book Now!</button>
+                                        <a href="#booking"> <button id="book-now" class="btn btn-primary">Book Now!</button></a>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
+
+
 
                     <div class="col-md-4">
                         <div class="card mb-3">
@@ -118,7 +122,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title" style="font-size: 32px; font-family: Helvetica, sans-serif;"><b>Doctor Ilnius Kalfoni</b></h5>
                                         <p class="card-text" style="font-size: 22px; font-family: Helvetica, sans-serif;">Registered Physiotherapist who graduated from the University Of McGill and specializes in concussion therapy</p>
-                                        <button id="book-now" class="btn btn-primary" href="#booking">Book Now!</button>
+                                        <a href="#booking"> <button id="book-now" class="btn btn-primary">Book Now!</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -233,8 +237,8 @@
                                 <div class="last">
                                     <div class="form-group" id="phoneNumber">
                                         <label for="email " class="textParTopic grey_text mt-3" style="margin-bottom: 1%;">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone_number" placeholder="(xxx)-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                                        <div class="invalid-feedback">The number you entered is invalid please enter this format (XXX)-XXX-XXXX ex: (647)-949-0837</div>
+                                        <input type="tel" class="form-control" id="phone_number" placeholder="(xxx)-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" onkeyup="addHyphen(this)" required>
+                                        <div class="invalid-feedback">The number you entered is invalid please enter this format do not include spaces nor dashes (XXX)-XXX-XXXX ex: (647)-949-0837</div>
                                     </div>
                                 </div>
 
@@ -286,9 +290,10 @@
                             </div>
                             <div class="row first">
                                 <div class="cardNumber">
-                                    <label for="Card_Number" class="textParTopic grey_text  mt-3" style="margin-bottom: 1%;">Card Number</label>
-                                    <input type="text" class="form-control" id="Card_Number" placeholder="xxxx xxxx xxxx xxxx" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
-                                    <div class="invalid-feedback">Please follow the required format (include spaces) xxxx xxxx xxxx xxxx</div>
+                                    <label for="Card_Number" class="textParTopic grey_text  mt-3" style="margin-bottom: 1%;">Card Number <img src="https://img.icons8.com/android/20/000000/info.png" title="The hypens are automatically added between all 4 digits."
+                                        style="margin: 0;" /></label>
+                                    <input type="text" class="form-control" id="Card_Number" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" onkeyup="addHyphenForCard(this)" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+                                    <div class="invalid-feedback">Input must only contain digits (do not include spaces)</div>
                                 </div>
                             </div>
 
