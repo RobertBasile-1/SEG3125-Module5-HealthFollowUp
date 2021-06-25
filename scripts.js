@@ -104,6 +104,7 @@ $(document).ready(function() {
                         }
                         localStorage.setItem("doctors", $("#doctors option").filter(':selected').text());
                         localStorage.setItem("date", $("#dateApp").val());
+                        localStorage.setItem("time", $('#time').find(":selected").text());
 
                         form.classList.add("was-validated");
 
